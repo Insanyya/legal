@@ -1,6 +1,5 @@
-================================================================================
-PRIVACY POLICY — MyHalalScanner
-================================================================================
+tittle : PRIVACY POLICY — MyHalalScanner
+
 
 Last updated: April 20, 2026
 
@@ -318,6 +317,5 @@ the handling of your data, please contact:
 
 We aim to respond to all privacy-related inquiries within 30 days.
 
-================================================================================
 END OF PRIVACY POLICY
-================================================================================
+
