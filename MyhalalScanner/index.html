@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<title>Privacy Policy — MyHalalScanner</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #0a7a3f;
+    --border: #e5e5e5;
+    --code-bg: #f5f5f5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121212;
+      --text: #e8e8e8;
+      --muted: #aaa;
+      --accent: #4caf7d;
+      --border: #2a2a2a;
+      --code-bg: #1e1e1e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+    line-height: 1.65;
+    color: var(--text);
+    background: var(--bg);
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    font-size: 16px;
+  }
+  header {
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+  }
+  h1 {
+    font-size: 1.8rem;
+    margin: 0 0 0.5rem;
+    color: var(--accent);
+  }
+  h2 {
+    font-size: 1.25rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid var(--border);
+  }
+  h3 {
+    font-size: 1.05rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--muted);
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  .meta a { color: var(--accent); }
+  ul { padding-left: 1.5rem; }
+  li { margin-bottom: 0.35rem; }
+  a { color: var(--accent); word-break: break-word; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 0.95rem;
+  }
+  th, td {
+    border: 1px solid var(--border);
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+  }
+  th {
+    background: var(--code-bg);
+    font-weight: 600;
+  }
+  .intro {
+    background: var(--code-bg);
+    padding: 1rem 1.25rem;
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+    margin-bottom: 2rem;
+  }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Privacy Policy — MyHalalScanner</h1>
+  <p class="meta"><strong>Last updated:</strong> April 20, 2026</p>
+  <p class="meta"><strong>Developer contact:</strong> <a href="mailto:insanyya.support@gmail.com">insanyya.support@gmail.com</a></p>
+</header>
+
+<div class="intro">
+  <p>This Privacy Policy applies to both versions of the app:</p>
+  <ul>
+    <li><strong>MyHalalScanner (Free)</strong> — available on Google Play</li>
+    <li><strong>MyHalalScanner Premium (Pro)</strong> — available on Google Play</li>
+  </ul>
+  <p>By using this app you agree to the practices described in this policy. If you do not agree, please uninstall the app and discontinue use.</p>
+</div>
+
+<h2>1. Overview</h2>
+<p>MyHalalScanner is an Android application that helps Muslim consumers determine whether a food product is halal by scanning barcodes or photographing ingredient labels. The app works primarily on your device using local data files and only contacts the internet to fetch product information from the OpenFoodFacts open food database.</p>
+<p>We are committed to protecting your privacy. This policy explains exactly what data is collected, how it is used, and your rights over it.</p>
+
+<h2>2. Data We Collect and How It Is Used</h2>
+
+<h3>2.1 Data Stored Locally on Your Device</h3>
+<p>When you scan a product, the following information is saved to a local database on your device (SQLite):</p>
+<ul>
+  <li>Product barcode (EAN/UPC)</li>
+  <li>Product name and brand</li>
+  <li>Ingredient list text</li>
+  <li>Scan verdict (Halal / Haram / Doubtful / Unknown)</li>
+  <li>Detected concern keywords (e.g. "gelatin", "E120")</li>
+  <li>Scan date and time</li>
+  <li>Product image URL (a link to the OpenFoodFacts image, not a local copy)</li>
+  <li>Product category and country of sale</li>
+</ul>
+<p>This data is stored <strong>only on your device</strong>. It is never transmitted to our servers. It is used solely to display your scan history inside the app so you can look up products you have scanned before without an internet connection.</p>
+<p>You can delete individual entries or clear your entire history at any time from the History screen.</p>
+
+<h3>2.2 Data Sent Over the Internet</h3>
+<p>When you scan a barcode or search for a product, the app contacts the OpenFoodFacts API (<code>world.openfoodfacts.org</code>) to fetch product information. The request includes:</p>
+<ul>
+  <li>The product barcode</li>
+  <li>Your preferred language code (e.g. "fr", "en", "ar") so the server can return ingredient text in your language</li>
+  <li>A User-Agent string identifying the app, as required by the OpenFoodFacts API terms</li>
+</ul>
+<p>No personal information (name, email, device ID, location) is included in these requests. OpenFoodFacts is an independent open-source nonprofit project. Their privacy policy is available at: <a href="https://world.openfoodfacts.org/privacy">https://world.openfoodfacts.org/privacy</a></p>
+
+<h3>2.3 Camera and Photos</h3>
+<p>The app requests camera permission to:</p>
+<ul>
+  <li>Scan product barcodes using the device camera</li>
+  <li>Photograph ingredient labels for OCR text recognition (Premium and Free)</li>
+  <li>Capture product photos when contributing to OpenFoodFacts (optional)</li>
+</ul>
+<p><strong>For barcode scanning and OCR:</strong> the camera image is processed entirely on your device. The pixel data is <strong>never</strong> sent to any server. ML Kit (Google's on-device machine learning library) processes the image locally.</p>
+<p><strong>For OCR ingredient scans:</strong> a temporary photo may be saved to your device's internal app storage (not accessible to other apps or the gallery) while the scan is in progress. This photo is only uploaded to OpenFoodFacts if you explicitly choose to contribute the product using the "Add to database" feature, and only after your confirmation.</p>
+<p>The app does not access, read, or use any photos already stored in your device's gallery or photo library.</p>
+
+<h3>2.4 Product Contributions to OpenFoodFacts (Optional)</h3>
+<p>If you choose to add or edit a product on OpenFoodFacts (via the built-in product editor), the following data is sent to OpenFoodFacts:</p>
+<ul>
+  <li>The product barcode</li>
+  <li>The ingredient text you entered or OCR-captured</li>
+  <li>Any photos you choose to upload (product front, ingredient label, nutrition)</li>
+  <li>A shared contributor account identifier (not tied to your personal identity — all app contributions appear under the same shared account)</li>
+</ul>
+<p>This data is submitted to OpenFoodFacts under their open database license (Open Database License / ODbL). Once submitted, it becomes part of the public OpenFoodFacts database and is subject to OpenFoodFacts' own privacy and data policies.</p>
+<p>This feature is entirely optional. You can use the halal scanning features without ever contributing to OpenFoodFacts.</p>
+
+<h3>2.5 Settings and Preferences</h3>
+<p>The app stores the following settings in your device's local SharedPreferences storage (never transmitted off-device):</p>
+<ul>
+  <li>Your selected UI language</li>
+  <li>Dark mode preference</li>
+  <li>Per-category scan toggles (pork, meat, insects, alcohol, vinegar, rennet)</li>
+  <li>GDPR consent status (Free version only)</li>
+</ul>
+
+<h3>2.6 Advertising (Free Version Only)</h3>
+<p>The free version of MyHalalScanner displays advertisements served by Google AdMob. To serve these ads, Google AdMob may collect and process:</p>
+<ul>
+  <li>Advertising ID (GAID) — a resettable device identifier</li>
+  <li>IP address (used to estimate approximate location for ad targeting)</li>
+  <li>Information about the ads shown to you and your interaction with them</li>
+  <li>Device information (OS version, screen size, language)</li>
+</ul>
+<p>This data is collected and processed by Google, not by us. Google's data collection is governed by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+<p>You can opt out of personalised advertising at any time by:</p>
+<ul>
+  <li>Opening Android Settings → Privacy → Ads → Opt out of Ads Personalisation</li>
+  <li>Or by resetting your Advertising ID in the same menu</li>
+</ul>
+<p>In regions subject to GDPR (European Economic Area and UK), the free version shows a consent dialog before loading any ads. You can withdraw or change your consent at any time from <strong>Settings → Privacy / Consent</strong> inside the app.</p>
+<p>The <strong>Premium version</strong> of the app contains <strong>no advertising</strong> and Google AdMob is not initialised. No advertising-related data is collected in the Premium version.</p>
+
+<h2>3. Data We Do Not Collect</h2>
+<p>We explicitly do <strong>not</strong> collect or have access to:</p>
+<ul>
+  <li>Your name, email address, or any account information</li>
+  <li>Your precise or approximate GPS location</li>
+  <li>Your contacts, calendar, or messages</li>
+  <li>Your browsing history or data from other apps</li>
+  <li>Health or biometric data</li>
+  <li>Payment information (app purchases go through Google Play — we never see payment details)</li>
+  <li>Any data from your photo gallery or file system beyond camera captures initiated by you within the app</li>
+</ul>
+<p>The app does not require you to create an account or log in.</p>
+
+<h2>4. Third-Party Services and Their Privacy Policies</h2>
+<p>The following third-party services are used by the app. Each has its own privacy policy that governs how they handle data:</p>
+
+<table>
+  <thead>
+    <tr><th>Service</th><th>Used in</th><th>Purpose</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>OpenFoodFacts API</td><td>Free + Premium</td><td>Product data (ingredients, images)</td></tr>
+    <tr><td>Google AdMob</td><td>Free only</td><td>Advertising</td></tr>
+    <tr><td>Google UMP (Consent SDK)</td><td>Free only</td><td>GDPR consent management</td></tr>
+    <tr><td>Google ML Kit (on-device)</td><td>Free + Premium</td><td>Barcode scanning, OCR, language ID</td></tr>
+    <tr><td>Google Play Services</td><td>Free + Premium</td><td>App delivery and updates</td></tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>OpenFoodFacts privacy policy: <a href="https://world.openfoodfacts.org/privacy">https://world.openfoodfacts.org/privacy</a></li>
+  <li>Google privacy policy (covers AdMob, UMP, ML Kit, Play Services): <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+  <li>Google AdMob partner policies: <a href="https://support.google.com/admob/answer/6128543">https://support.google.com/admob/answer/6128543</a></li>
+</ul>
+<p><strong>ML Kit runs entirely on your device.</strong> The barcode scanning, text recognition (OCR), and language detection models do not send any image or text data to Google servers. ML Kit processes data locally only.</p>
+
+<h2>5. Data Retention and Deletion</h2>
+
+<h3>5.1 Local Scan History</h3>
+<p>Your scan history is stored on your device indefinitely until you delete it. You can delete individual scan entries by swiping left on any item in the History screen, or clear all history via <strong>History → Menu → Clear All</strong>. The app automatically limits history to 500 entries to prevent unbounded growth; the oldest entries are removed first when the limit is reached.</p>
+
+<h3>5.2 App Data and Preferences</h3>
+<p>All app preferences and settings are deleted when you uninstall the app.</p>
+
+<h3>5.3 OpenFoodFacts Contributions</h3>
+<p>If you submitted product data to OpenFoodFacts, that data is stored by OpenFoodFacts under their open database policies. To request deletion of contributed data, contact OpenFoodFacts directly at <a href="mailto:contact@openfoodfacts.org">contact@openfoodfacts.org</a>.</p>
+
+<h3>5.4 AdMob Data (Free Version)</h3>
+<p>Advertising data held by Google is subject to Google's retention policies. Visit <a href="https://myaccount.google.com">https://myaccount.google.com</a> to manage Google's data about you.</p>
+
+<h2>6. Your Rights (GDPR and Other Regulations)</h2>
+<p>If you are located in the European Economic Area (EEA), the United Kingdom, or other jurisdictions with privacy rights legislation, you have the right to:</p>
+<ul>
+  <li><strong>Access:</strong> request a copy of data we hold about you</li>
+  <li><strong>Rectification:</strong> correct inaccurate data</li>
+  <li><strong>Erasure ("right to be forgotten"):</strong> request deletion of your data</li>
+  <li><strong>Restriction:</strong> request that we limit how we use your data</li>
+  <li><strong>Portability:</strong> receive your data in a machine-readable format</li>
+  <li><strong>Objection:</strong> object to our processing of your data</li>
+  <li><strong>Withdraw consent:</strong> at any time, for consent-based processing (e.g. ad personalisation in the Free version)</li>
+</ul>
+<p>Since all personal data is stored locally on your device, you can exercise most of these rights directly within the app (deleting history, clearing preferences) without needing to contact us.</p>
+<p>For any requests related to data processed by third parties (Google AdMob, OpenFoodFacts), please contact those services directly using the links in Section 4.</p>
+<p>For any privacy requests or concerns, contact us at: <a href="mailto:insanyya.support@gmail.com">insanyya.support@gmail.com</a>. We will respond within 30 days.</p>
+<p>For the Free version's advertising consent, you can:</p>
+<ul>
+  <li>Change or withdraw consent: <strong>Settings → Privacy / Consent</strong> (inside the app)</li>
+  <li>Reset your Advertising ID: Android <strong>Settings → Privacy → Ads</strong></li>
+</ul>
+
+<h2>7. Children's Privacy</h2>
+<p>MyHalalScanner is not directed at children under the age of 13 (or 16 in the EEA). We do not knowingly collect personal information from children.</p>
+<p>If you are a parent or guardian and believe your child has provided personal information through this app, please contact us at <a href="mailto:insanyya.support@gmail.com">insanyya.support@gmail.com</a> and we will take appropriate steps to delete such information.</p>
+<p>The Free version's advertising is configured with Google AdMob's standard audience settings and does not serve personalised ads to users who have not consented.</p>
+
+<h2>8. Data Security</h2>
+<p>All data stored on your device (scan history, preferences) is stored in the app's private internal storage. It is not accessible to other apps or readable without root access to the device.</p>
+<p>Data sent to OpenFoodFacts and Google AdMob is transmitted over HTTPS (TLS). The app's network security configuration explicitly disables cleartext (HTTP) traffic.</p>
+<p>We do not operate any servers that store your personal data, so there is no server-side security risk from our side. The security of your data on your device depends on your device's own security (screen lock, encryption, etc.).</p>
+
+<h2>9. International Data Transfers</h2>
+<p>When the app contacts OpenFoodFacts servers or Google's advertising infrastructure, your request data may be processed on servers located outside your country, including in the United States and the European Union.</p>
+<p>OpenFoodFacts is a French nonprofit and its primary servers are based in the EU. Google operates data centres globally. Both have data transfer mechanisms in place that comply with applicable data protection law (Standard Contractual Clauses, adequacy decisions, etc.).</p>
+
+<h2>10. Changes to This Privacy Policy</h2>
+<p>We may update this Privacy Policy from time to time to reflect changes in the app's features or applicable law. When we make significant changes:</p>
+<ul>
+  <li>The "Last updated" date at the top of this document will be revised</li>
+  <li>If the change materially affects how we handle personal data, we will provide notice within the app or via the Play Store listing</li>
+</ul>
+<p>We encourage you to review this policy periodically. Continued use of the app after a policy update constitutes your acceptance of the revised policy.</p>
+
+<h2>11. Contact</h2>
+<p>For any questions, concerns, or requests regarding this Privacy Policy or the handling of your data, please contact:</p>
+<p><strong>Developer:</strong> <a href="mailto:insanyya.support@gmail.com">insanyya.support@gmail.com</a></p>
+<p>We aim to respond to all privacy-related inquiries within 30 days.</p>
+
+<footer>
+  © 2026 MyHalalScanner — Privacy Policy
+</footer>
+
+</body>
+</html>
